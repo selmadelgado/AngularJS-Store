@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="store">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+
+  <body>
+    <div ng-controller="StoreController as store" class="container">
+      <h1>{{ store.product.name }}</h1>
+      <h2>${{ store.product.price}}</h2>
+      <p>{{ store.product.description }}</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+
+</html>
