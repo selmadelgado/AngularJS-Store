@@ -1,46 +1,38 @@
 <!DOCTYPE html>
 <html ng-app="gemStore">
-
-<head>
+  <head>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="gem-store.css" />
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
-    <script type="text/javascript" src="app.js"></script>    
-</head>
-
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="products.js"></script>
+  </head>
   <body ng-controller="StoreController as store" style="max-width:500px; margin:0px auto;">
-
-      
-   <!--  Store Header  -->
+    <!--  Store Header  -->
     <header>
       <h1 class="text-center">Flatlander Crafted Gems</h1>
       <h2 class="text-center">- an Angular store -</h2>
-    </header>      
+    </header>
 
     <!--  Products Container  -->
     <div class="list-group">
-        
+
       <!--  Product Container  -->
-      <div class="list-group-item" ng-repeat="product in store.products" ng-init="tab =1">
-       
+      <div class="list-group-item" ng-repeat="product in store.products"
+                                   ng-init="tab = 1">
         <h3>
-          {{product.name}}
-          <em class="pull-right">{{product.price | currency}}</em>
-       </h3>
- 
+          {{ product.name }}
+          <em class="pull-right">{{ product.price | currency }}</em>
+        </h3>
 
-        <!-- Image Gallery  -->
         <product-gallery></product-gallery>
-          
-        <!-- Product Tabs -->
-        <product-tabs></product-tabs>
-        
-       </div> 
-     </div> 
-      
-   </body>
-</html>
 
+        <product-tabs></product-tabs>
+
+      </div> <!-- End product container -->
+    </div> <!-- End products container -->
+  </body>
+</html>
 
 
 
