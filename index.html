@@ -62,85 +62,13 @@
             
             
         <!-- Tab Content Container -->
-          <div style="min-height:100px; overflow-y:scroll;">
+          <div style="min-height:200px; overflow-y:scroll;">
 
-            <!-- Description Tab Content -->
-             <div ng-show="tab.isSelected(1)">
-               <h4>Description</h4>
-               <blockquote>{{ product.description }}</blockquote>
-             </div>
-
-            <!-- Spec Tab Content -->
-             <div ng-show="tab.isSelected(2)">
-               <h4>Specs</h4>
-               <blockquote>Shine: {{ product.shine }}</blockquote>
-             </div>
-
-            <!-- Review Tab Content -->
-             <div ng-show="tab.isSelected(3)">
-
-              <!--  Product Reviews List -->
-              <ul style="padding:0;">
-                <h4>Reviews</h4>
-                <li class="list-unstyled" ng-repeat="review in product.reviews">
-                  <blockquote>
-                    <strong>{{review.stars}} Stars</strong>
-                    {{review.body}}
-                    <cite class="clearfix">
-                      -{{review.author}} on {{review.createdOn|date}}
-                    </cite>
-                  </blockquote>
-              </li>
-              </ul>
-
-              <!--  Review Form -->
-              <form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewCtrl.addReview(product)">
-
-
-               <!--  Live Preview -->
-                <blockquote >
-                  <strong>{{reviewCtrl.review.stars}} Stars</strong>
-                  {{reviewCtrl.review.body}}
-                  <cite class="clearfix">-{{reviewCtrl.review.author}}</cite>
-                </blockquote>
-
-
-                <!--  Review Form -->
-                <h4>Submit a Review</h4>
-                <fieldset class="form-group">
-                  <select ng-model="reviewCtrl.review.stars"
-                          class="form-control"
-                          ng-options="stars for stars in [5,4,3,2,1]"
-                          title="Stars"
-                          required>
-                    <option value>Rate the Product</option>
-                  </select>
-                </fieldset>
-
-                <fieldset class="form-group">
-                  <textarea ng-model="reviewCtrl.review.body"
-                            class="form-control"
-                            placeholder="Write a short review of the product..."
-                            title="Review"
-                            required></textarea>
-                </fieldset>
-
-                <fieldset class="form-group">
-                  <input ng-model="reviewCtrl.review.author"
-                         type="email"
-                         class="form-control"
-                         placeholder="jimmyDean@example.org"
-                         title="Email" 
-                         required/>
-                </fieldset>
-               
-		 <fieldset class="form-group">
-                  <input type="submit"
-                         class="btn btn-primary pull-right"
-                         value="Submit Review" />
-                </fieldset>
-              </form>
-             </div>
+            <!-- Description Tabs -->
+            <product-description ng-show="tab.isSelected(1)"></product-description>
+             <product-specs ng-show="tab.isSelected(2)"></product-specs>
+              <product-reviews ng-show="tab.isSelected(3)"></product-reviews>
+           
            </div>
 
         </section> <!-- End product tabs -->

@@ -39,6 +39,30 @@
   });
     
     
+    app.directive('productDescription', function(){
+    return {
+      restrict: 'E',
+      templateUrl: 'product-description.html',
+    };
+  });
+    
+    
+    app.directive("productSpecs", function() {
+    return {
+      restrict: 'E',
+      templateUrl: 'product-specs.html',
+    };
+  });
+
+    
+  app.directive("productReviews", function() {
+    return {
+      restrict: 'E',
+      templateUrl: "product-reviews.html"
+    };
+  });
+    
+    
   var gems = [
       
     {
@@ -58,7 +82,7 @@
         stars: 5,
         body: "I love this gem!",
         author: "leo@example.org",
-        createdOn: 1397490980837
+        createdOn: 1397490980835
       }, {
         stars: 1,
         body: "This gem sucks.",
@@ -104,7 +128,7 @@
       images: [
         "images/gem-06.gif",
         "images/gem-07.gif",
-        "images/gem-09.gif"
+        "images/gem-08.gif"
       ],
       reviews: [{
         stars: 1,
