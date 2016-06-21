@@ -1,0 +1,26 @@
+<section class="tab">
+  <ul class="nav nav-pills">
+    <li ng-class="{ active:tab.isSet(1) }">
+      <a href ng-click="tab.setTab(1)">Description</a>
+    </li>
+    <li ng-class="{ active:tab.isSet(2) }">
+      <a href ng-click="tab.setTab(2)">Specs</a>
+    </li>
+    <li ng-class="{ active:tab.isSet(3) }">
+      <a href ng-click="tab.setTab(3)">Reviews</a>
+    </li>
+  </ul>
+
+  <!-- Tab Content Container -->
+  <div style="min-height:200px; overflow-y:scroll;">
+
+    <!-- Description Tab Content -->
+    <product-description ng-show="tab.isSet(1)"></product-description>
+
+    <!-- Spec Tab Content -->
+    <product-specs ng-show="tab.isSet(2)"></product-specs>
+
+    <!-- Review Tab Content -->
+    <product-reviews ng-show="tab.isSet(3)"></product-reviews>
+ </div>
+</section> 

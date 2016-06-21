@@ -46,33 +46,8 @@
           
           
         <!-- Product Tabs -->
-        <section class="tab" ng-controller="TabController as tab">
-          <ul class="nav nav-pills">
-            <li ng-class="{ active:tab.isSelected(1) }">
-              <a href ng-click="tab.selectTab(1)">Description</a>
-            </li>
-            <li ng-class="{ active:tab.isSelected(2) }">
-              <a href ng-click="tab.selectTab(2)">Specs</a>
-            </li>
-            <li ng-class="{ active:tab.isSelected(3) }">
-              <a href ng-click="tab.selectTab(3)">Reviews</a>
-            </li>
-          </ul>
-
-            
-            
-        <!-- Tab Content Container -->
-          <div style="min-height:200px; overflow-y:scroll;">
-
-            <!-- Description Tabs -->
-            <product-description ng-show="tab.isSelected(1)"></product-description>
-             <product-specs ng-show="tab.isSelected(2)"></product-specs>
-              <product-reviews ng-show="tab.isSelected(3)"></product-reviews>
-           
-           </div>
-
-        </section> <!-- End product tabs -->
- 
+        <product-tabs></product-tabs>
+        
        </div> <!-- End product container -->
      </div> <!-- End products container -->
       
