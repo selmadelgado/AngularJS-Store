@@ -9,11 +9,17 @@
 
   <body ng-controller="StoreController as store" style="max-width:500px; margin:0px auto;">
 
+    <header>
+      <h1 class="text-center">Flatlander Crafted Gems</h1>
+      <h2 class="text-center">- an Angular store -</h2>
+    </header>      
+
     <!--  Products Container  -->
     <div class="list-group">
         
       <!--  Product Container  -->
       <div class="list-group-item" ng-repeat="product in store.products" ng-init="tab =1">
+       
         <h3>
           {{product.name}}
           <em class="pull-right">{{product.price | currency}}</em>
@@ -22,13 +28,19 @@
 
         <!-- Image Gallery  -->
         <div class='gallery' ng-show="product.images.length > 0" ng-controller="GalleryController as gallery">
-          <img class="img img-circle center-block" ng-src="{{ product.images[gallery.current] }}" />
-          <ul class="clearfix list-inline thumbs">
+       
+            <img class="img img-circle center-block" ng-src="{{ product.images[gallery.current] }}" />
+         
+            <ul class="clearfix">
             <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
+                <a href ng-click="gallery.setCurrent(product.images.indexOf(image))">
               <img ng-src="{{ image }}" style="height:50px;" />
+                </a>
             </li>
           </ul>
+            
         </div>
+          
           
         <section class="tab" ng-controller="TabController as tab">
           <ul class="nav nav-pills">
@@ -43,6 +55,9 @@
             </li>
           </ul>
 
+            
+            
+        <div style="min-height:100px">   
           <div ng-show="tab.isSelected(1)">
             <h4>Description</h4>
             <blockquote>{{ product.description }}</blockquote>
@@ -57,6 +72,8 @@
             <h4>Reviews</h4>
             <blockquote></blockquote>
           </div>
+            
+        </div> 
         </section>  
           
           
