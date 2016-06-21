@@ -57,12 +57,12 @@
       reviews: [{
         stars: 5,
         body: "I love this gem!",
-        author: "joe@example.org",
+        author: "leo@example.org",
         createdOn: 1397490980837
       }, {
         stars: 1,
         body: "This gem sucks.",
-        author: "tim@example.org",
+        author: "aries@example.org",
         createdOn: 1397490980837
       }]
     },
@@ -114,12 +114,12 @@
       }, {
         stars: 1,
         body: "BBW: High Shine != High Quality.",
-        author: "LouisW407@example.org",
+        author: "LeoLasVegas@example.org",
         createdOn: 1397490980837
       }, {
         stars: 1,
         body: "Don't waste your rubles!",
-        author: "nat@example.org",
+        author: "Aries@example.org",
         createdOn: 1397490980837
       }]
     }
