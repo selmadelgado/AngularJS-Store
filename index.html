@@ -30,26 +30,13 @@
  
 
         <!-- Image Gallery  -->
-        <div class='gallery' ng-show="product.images.length > 0" ng-controller="GalleryController as gallery">
-       
-            <img class="img img-circle center-block" ng-src="{{ product.images[gallery.current] }}" />
-         
-            <ul class="clearfix">
-            <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
-                <a href ng-click="gallery.setCurrent(product.images.indexOf(image))">
-              <img ng-src="{{ image }}" style="height:50px;" />
-                </a>
-            </li>
-          </ul>
-            
-        </div>
-          
+        <product-gallery></product-gallery>
           
         <!-- Product Tabs -->
         <product-tabs></product-tabs>
         
-       </div> <!-- End product container -->
-     </div> <!-- End products container -->
+       </div> 
+     </div> 
       
    </body>
 </html>
