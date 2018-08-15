@@ -11,7 +11,9 @@ A Single Page application project incorporating directives, controllers, express
 
 [![Shaping Up with AngularJS](https://imgur.com/a/t52gwpk)](https://www.youtube.com/watch?v=9Au3Rx2fDf4&feature=youtu.be "Shaping Up with AngularJS")
 
-[![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME")
+
+
+[![Everything Is AWESOME](http://imgur.com/a/t52gwpk)](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME")
 
 
 - - -
