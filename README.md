@@ -13,7 +13,7 @@ A Single Page application project incorporating directives, controllers, express
 
 
 
-[![Shaping Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://www.youtube.com/watch?v=9Au3Rx2fDf4 "Shaping Up with AngularJS")
+[![Shaping Up with AngularJS](http://i.imgur.com/Ot5DWAW.png)](https://www.youtube.com/watch?v=9Au3Rx2fDf4 "Shaping Up with AngularJS")
 
 - - -
 
