@@ -1,6 +1,6 @@
-# Flatlander Crafted Gems - An AngularJS Store
+# Flatlander Crafted Gems - An Angularjs Store
 
-[View live demo](https://rawgit.com/selmadelgado/AngularJS-Store/master/index.html)
+[Live demo](https://rawgit.com/selmadelgado/AngularJS-Store/master/index.html)
 
 
 
